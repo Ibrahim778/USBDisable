@@ -25,6 +25,8 @@ add_executable(${PROJECT_NAME}
 
 target_link_libraries(${PROJECT_NAME}
   SceShellSvc_stub_weak
+  SceLibKernel_stub
+  SceKernelThreadMgr_stub
 )
 
 vita_create_self(${PROJECT_NAME}.suprx ${PROJECT_NAME} CONFIG ${PROJECT_NAME}.yml UNSAFE)
