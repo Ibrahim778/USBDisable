@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "vitasdk.h": "c",
+        "taihen.h": "c",
+        "musicexport.h": "c",
+        "modulemgr.h": "c"
+    }
+}

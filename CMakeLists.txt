@@ -25,7 +25,10 @@ add_executable(${PROJECT_NAME}
 
 target_link_libraries(${PROJECT_NAME}
   SceShellSvc_stub_weak
+  taihen_stub
   SceLibKernel_stub
+  SceKernelModulemgr_stub 
+  
   SceKernelThreadMgr_stub
 )
 
