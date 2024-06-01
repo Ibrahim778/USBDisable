@@ -27,6 +27,10 @@ int DisableThread(SceSize args, void *argp)
                 hook = taiHookFunctionOffset(&ref, modinfo.modid, 0, 0x1c9bfa, 1, USBDisable_Patch); 
                 break;
 
+            case 0xEAB89D5C: // 3.60 testkit
+                hook = taiHookFunctionOffset(&ref, modinfo.modid, 0, 0x1c202e, 1, USBDisable_Patch); 
+                break;
+            
             case 0x587F9CED: // 3.65 testkit
                 hook = taiHookFunctionOffset(&ref, modinfo.modid, 0, 0x1c20f6, 1, USBDisable_Patch);
                 break;
